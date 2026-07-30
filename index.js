@@ -38,9 +38,9 @@ async function diff() {
         })
         const commitMessage = response.choices[0].message.content;
         const commit = await git.commit(commitMessage);
-        const log = await git.log();
+        const log = await git.log(['--oneline']);
 
-        console.log(log.latest)
+        console.log(log)
         console.log(`Commit created, push it, or change it with --amend`);
     } catch(err) {
         console.log("Operation failed", err.message)
