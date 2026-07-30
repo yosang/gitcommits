@@ -1,7 +1,7 @@
 # Project
 A node project that uses `openai` to generate a commit message based on the `git diff --stage` of the `pwd` (process working directory), which should be a `git` project.
 
-# Prerequicites
+# Prerequisites
 - node v24
 - some basic shell knowledge
 - some basic git understanding
