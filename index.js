@@ -40,7 +40,7 @@ async function diff() {
         const commit = await git.commit(commitMessage);
         const log = await git.log();
 
-        console.log(log.latest)
+        console.log(log.latest.message)
         console.log(`Commit created, push it, or change it with --amend`);
     } catch(err) {
         console.log("Operation failed", err.message)
