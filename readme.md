@@ -7,7 +7,7 @@ A node project that uses `openai` to generate a commit message based on the `git
 - some basic git understanding
 
 # Installation
-1. Clone the repohttps://platform.openai.com/
+1. Clone the repo
 2. Cd into it
 3. install dependencies with `npm install`
 4. copy `.env.example`, rename it to `.env` and add your open ai key in there (currently im just using openai, feel free to change the code if you want to use a different llm service)
