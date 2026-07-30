@@ -8,7 +8,7 @@ const projectPath = process.cwd();
 
 const git = simpleGit(projectPath);
 
-async function diff() {
+async function generateCommit() {
     try {
         const diff = await git.diff(["--staged"]);
         const response = await openai.chat.completions.create({
@@ -47,4 +47,4 @@ async function diff() {
     }
 }
 
-diff();
+generateCommit();
